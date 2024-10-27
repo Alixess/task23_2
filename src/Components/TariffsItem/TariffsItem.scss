@@ -1,0 +1,33 @@
+.blue {
+  background-color: rgb(0, 204, 255);
+}
+
+.red {
+  background-color: rgb(236, 80, 80);
+}
+
+.green {
+  background-color: rgb(33, 150, 131);
+}
+
+.black {
+  background-color: black;
+}
+
+.cardholder {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.card {
+  border: white 2px solid;
+  margin: 20px;
+}
+
+.medium {
+  transform: scale(1.2);
+}
+
+.grey {
+  background-color: grey;
+}
