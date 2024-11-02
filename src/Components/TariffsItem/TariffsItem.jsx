@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TariffsItem.scss";
 
 export default function TariffsItem({
@@ -7,10 +7,14 @@ export default function TariffsItem({
   speed,
   info,
   background,
-  size,
+  activeSelect,
+  index,
+  handleClick,
 }) {
   return (
-    <div className={`${size} card`}>
+    <div
+      className={`card ${activeSelect ? "medium" : ""}`}
+      onClick={() => handleClick(index)}>
       <div className="card-body">
         <h2 className={`${background} card-title`}>{name}</h2>
         <p className={`${background} card-text`}>руб {price}/мес</p>
